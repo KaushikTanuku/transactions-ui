@@ -12,7 +12,7 @@ const logos = {
 
 const TransactionRow = ({ data }) => {
   return (
-    <tr className={`status-${data.status.toLowerCase()}`}>
+    <tr>
       <td>
         <img src={logos[data.logo]} alt={data.logo} className="card-logo" />
         {data.card} <span className={`type-${data.type.toLowerCase()}`}>{data.type}</span>
